@@ -1,0 +1,24 @@
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 5%;
+
+	.widget {
+		background-color: #fff;
+		padding: 30px;
+	}
+}
+
+@media only screen and (min-width: $screen-small) {
+	.sidebar {
+		margin-bottom: 40px;
+
+		.widget {
+			padding: 40px;
+			margin-bottom: 40px;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+/* # Variables
+-----------------------------------------------------------------------*/
+
+/* ### Breakpoints */
+$screen-xxsmall: 481px;
+$screen-xsmall: 681px;
+$screen-small: 861px;
+$screen-medium: 1024px;
+$screen-large: 1201px;
+$screen-xlarge: 1341px;
+
+/* ### Colors */
+$color-white: #fff;
+$color-black: #000;
+
+$color-text: #222;
+$color-focus: #999;
+$color-disabled: #777;
+
+$color-bg: #f5f5f5;
+$color-border: #eee;
+$color-code: #ddd;
+
+$color-accent: #c3251d;
+$color-accent-light: mix(#ffffff, $color-accent, 20%);
+$color-accent-dark: mix(#000000, $color-accent, 20%);
+
+/* ### Dimensions */
+
+/* ### Fonts */
+$font-sans: 'Source Sans Pro', 'arial' sans-serif;
+$font-serif: 'Source Serif Pro', 'Times New Roman', serif;
+// $font-accent: 'Oswald', sans-serif;

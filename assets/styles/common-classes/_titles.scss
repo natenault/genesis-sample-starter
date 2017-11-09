@@ -1,0 +1,35 @@
+/* ## Titles
+--------------------------------------------- */
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.entry-title {
+	font-size: 36px;
+	font-size: 3.6rem;
+
+	a {
+		color: $color-text;
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			color: $color-accent;
+		}
+	}
+}
+
+.sidebar .widget-title a {
+	color: $color-text;
+	text-decoration: none;
+}
+
+.widget-title {
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}

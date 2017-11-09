@@ -1,0 +1,141 @@
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-wrap {
+	width: 100%;
+
+	.content-sidebar-sidebar & {
+		float: left;
+	}
+
+	.sidebar-content-sidebar &,
+	.sidebar-sidebar-content & {
+		float: right;
+	}
+}
+
+/* ### Content */
+
+.content {
+	float: right;
+	width: 100%;
+
+	.content-sidebar &,
+	.content-sidebar-sidebar &,
+	.sidebar-content-sidebar & {
+		float: left;
+	}
+
+	.full-width-content & {
+		width: 100%;
+	}
+}
+
+/* ### Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	width: 100%;
+
+	.sidebar-content &,
+	.sidebar-sidebar-content & {
+		float: left;
+	}
+}
+
+/* ### Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	width: 100%;
+
+	.content-sidebar-sidebar & {
+		float: right;
+	}
+}
+
+@media only screen and (min-width: $screen-medium) {
+	.content-sidebar-wrap {
+		.content-sidebar-sidebar &,
+		.sidebar-content-sidebar &,
+		.sidebar-sidebar-content & {
+			width: 740px;
+		}
+	}
+
+	/* ### Content */
+
+	.content {
+		width: 620px;
+
+		.sidebar-content-sidebar &,
+		.sidebar-sidebar-content &,
+		.content-sidebar-sidebar & {
+			width: 400px;
+		}
+	}
+
+	/* ### Primary Sidebar */
+
+	.sidebar-primary {
+		width: 300px;
+	}
+
+	/* ### Secondary Sidebar */
+
+	.sidebar-secondary {
+		width: 180px;
+	}
+}
+
+@media only screen and (min-width: $screen-large) {
+	.content-sidebar-wrap {
+		.content-sidebar-sidebar &,
+		.sidebar-content-sidebar &,
+		.sidebar-sidebar-content & {
+			width: 920px;
+		}
+	}
+
+	/* ### Content */
+
+	.content {
+		width: 800px;
+
+		.sidebar-content-sidebar &,
+		.sidebar-sidebar-content &,
+		.content-sidebar-sidebar & {
+			width: 580px;
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-xlarge) {
+	.content-sidebar-wrap {
+		.content-sidebar-sidebar &,
+		.sidebar-content-sidebar &,
+		.sidebar-sidebar-content & {
+			width: 1060px;
+		}
+	}
+
+	/* ### Content */
+
+	.content {
+		width: 880px;
+
+		.content-sidebar-sidebar &,
+		.sidebar-content-sidebar &,
+		.sidebar-sidebar-content & {
+			width: 660px;
+		}
+	}
+
+	/* ### Primary Sidebar */
+
+	.sidebar-primary {
+		width: 360px;
+	}
+}

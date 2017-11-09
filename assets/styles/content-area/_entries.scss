@@ -1,0 +1,45 @@
+/* ## Entries
+--------------------------------------------- */
+
+.entry {
+	background-color: #fff;
+	margin-bottom: 5%;
+	padding: 30px;
+}
+
+.entry-content {
+	ol,
+	ul {
+		margin-bottom: 28px;
+		margin-left: 40px;
+
+		ol,
+		ul {
+			margin-bottom: 0;
+		}
+	}
+
+	ol > li {
+		list-style-type: decimal;
+	}
+
+	ul > li {
+		list-style-type: disc;
+	}
+
+	code {
+		background-color: $color-text;
+		color: #eee;
+	}
+
+	> p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: $screen-small) {
+	.entry {
+		margin-bottom: 40px;
+		padding: 70px 80px;
+	}
+}

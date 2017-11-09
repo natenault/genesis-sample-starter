@@ -1,0 +1,17 @@
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: #fff;
+
+  > .wrap {
+    padding: 20px 5%;
+  }
+}
+
+@media only screen and (min-width: $screen-medium) {
+  .site-header .wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

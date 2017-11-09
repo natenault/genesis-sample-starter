@@ -1,0 +1,63 @@
+/* ## Pagination
+--------------------------------------------- */
+
+.pagination {
+	clear: both;
+	margin: 5% auto;
+}
+
+.adjacent-entry-pagination {
+	background-color: $color-white;
+	padding: 30px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.archive-pagination {
+	li {
+		display: inline;
+
+		a {
+			margin-bottom: 4px;
+		}
+	}
+
+	a {
+		background-color: #fff;
+		color: $color-text;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 16px;
+		font-size: 1.6rem;
+		font-weight: 600;
+		padding: 8px 16px;
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			background-color: $color-accent;
+			color: #fff;
+		}
+	}
+
+	.active a {
+		background-color: $color-accent;
+		color: #fff;
+	}
+}
+
+@media only screen and (min-width: $screen-small) {
+	.pagination {
+		margin: 40px 0;
+	}
+
+	.adjacent-entry-pagination {
+		padding: 60px;
+	}
+
+	.archive-pagination li a {
+		margin-bottom: 0;
+	}
+}
